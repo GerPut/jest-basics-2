@@ -8,3 +8,8 @@ test("should return number of woofs", function () {
     expect(result).toMatch(/\dwoof/i)
     expect(['a', 'b', 'c']).toContain("b")
 })
+
+test("should return null when not given a string", () => {
+    const result = woof()
+    expect(result).toBeNull()
+})
