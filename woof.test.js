@@ -13,3 +13,10 @@ test("should return null when not given a string", () => {
     const result = woof()
     expect(result).toBeNull()
 })
+
+test.skip("should return null when not given a string", () => {
+    woof()
+    expect(() => woof()).toThrow("MUST")
+})
+
+test.todo("should not allow numbers to be passed")
